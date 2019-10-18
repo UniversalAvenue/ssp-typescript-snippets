@@ -1,0 +1,23 @@
+{
+	"import react": {
+		"prefix": "imr",
+		"body": ["import React from 'react'"],
+		"description": "import react"
+	},
+	"React Function Component": {
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"export const ${TM_DIRECTORY/^.+\\/(.*)$/${1:/pascalcase}/g}$1: React.FC<${TM_DIRECTORY/^.+\\/(.*)$/${1:/pascalcase}/g}$1Props> = function ({ $2 }) {",
+			"  return (",
+			"    $0",
+			"  );",
+			"};",
+			"",
+			"type ${TM_DIRECTORY/^.+\\/(.*)$/${1:/pascalcase}/g}$1Props = { $2: $3 }",
+			""
+		],
+		"description": "Create a React Function Component"
+	}
+}

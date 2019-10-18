@@ -1,0 +1,45 @@
+{
+	"name": "ssp-typescript-snippets",
+	"version": "1.0.0",
+	"description": "Code snippets for SSP components in TypeScript",
+	"displayName": "ssp-typescript-snippets",
+	"publisher": "johanhalse",
+	"icon": "images/react.png",
+	"galleryBanner": {
+		"theme": "light"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johanhalse/ssp-typescript-snippets.git"
+	},
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"react",
+		"vscode",
+		"typescript",
+		"vscode-extension"
+	],
+	"author": "swyx",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/johanhalse/ssp-typescript-snippets/issues"
+	},
+	"homepage": "https://github.com/johanhalse/ssp-typescript-snippets#readme",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}
